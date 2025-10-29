@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PCMentesLab — História dos Computadores</title>
+  <meta name="description" content="PCMentesLab — resumo da história dos computadores. Criado por Miguel e Rauan.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">PC</div>
+        <div>
+          <h1>PCMentesLab</h1>
+          <p class="lead">Resumo da história dos computadores — explorando marcos e inventores.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#historia">História</a>
+        <a href="#criadores">Criadores</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <article class="card hero" id="historia">
+          <h2>Uma jornada pela história dos computadores</h2>
+          <p class="lead">Do ábaco às máquinas modernas: uma visão condensada dos inventos e pessoas que moldaram a computação.</p>
+
+          <div class="controls">
+            <input class="search" id="search" placeholder="Buscar por ano, nome ou invenção...">
+            <button class="btn" id="toggleDark">Dark / Light</button>
+            <button class="btn primary" id="expandAll">Expandir tudo</button>
+          </div>
+
+          <div class="timeline" id="timeline">
+            <div class="event" data-keywords="ábaco antigo 3000 a.c">
+              <div class="dot"></div>
+              <div class="body">
+                <h3>Ábaco — primeiras ferramentas de cálculo (c. 3000 a.C.)</h3>
+                <p class="more">Instrumentos como o ábaco são considerados alguns dos primeiros auxiliares para cálculo — usados em várias civilizações antigas para somas rápidas.</p>
+              </div>
+            </div>
+
+            <div class="event" data-keywords="charles babbage diferencial analítica 1822 1837">
+              <div class="dot"></div>
+              <div class="body">
+                <h3>Charles Babbage — a máquina diferencial e analítica (século XIX)</h3>
+                <p class="more">Babbage idealizou máquinas mecânicas programáveis que anteciparam o conceito de computador. Ada Lovelace escreveu algoritmos para sua máquina analítica, sendo lembrada como a primeira programadora.</p>
+              </div>
+            </div>
+
+            <div class="event" data-keywords="alan turing máquina universal turing 1936 1940 computação moderna">
+              <div class="dot"></div>
+              <div class="body">
+                <h3>Alan Turing — modelo teórico da computação (1936)</h3>
+                <p class="more">A Máquina de Turing formalizou o que significa computar — sendo base teórica essencial para ciência da computação.</p>
+              </div>
+            </div>
+
+            <div class="event" data-keywords="eniac 1945 primeiro computador eletrônico">
+              <div class="dot"></div>
+              <div class="body">
+                <h3>ENIAC e os primeiros computadores eletrônicos (1940s)</h3>
+                <p class="more">Máquinas como ENIAC mostraram que cálculos complexos podiam ser feitos eletronicamente, usando válvulas termiônicas antes dos transistores.</p>
+              </div>
+            </div>
+
+            <div class="event" data-keywords="transistor bell labs 1947 1950s">
+              <div class="dot"></div>
+              <div class="body">
+                <h3>Transistor — era da miniaturização (1947)</h3>
+                <p class="more">Inventado nos Bell Labs, o transistor substituiu válvulas e permitiu computadores menores, mais rápidos e mais confiáveis.</p>
+              </div>
+            </div>
+
+            <div class="event" data-keywords="microprocessador intel 1971 8080 4004 ken thompson dennis ritchie">
+              <div class="dot"></div>
+              <div class="body">
+                <h3>Microprocessadores e a computação pessoal (1970s)</h3>
+                <p class="more">Com chips como Intel 4004 e depois 8080, tornou-se viável criar computadores pessoais — abrindo caminho para empresas como Apple, IBM PC e outras.</p>
+              </div>
+            </div>
+
+            <div class="event" data-keywords="internet arpanet 1969 tim berners-lee 1989 web 1990s">
+              <div class="dot"></div>
+              <div class="body">
+                <h3>Rede global e a World Wide Web (1969–1990s)</h3>
+                <p class="more">Da ARPANET às propostas de Tim Berners-Lee, a conexão entre máquinas transformou informação e colaboração em escala global.</p>
+              </div>
+            </div>
+
+            <div class="event" data-keywords="computação moderna gpu ia 2000s 2010s">
+              <div class="dot"></div>
+              <div class="body">
+                <h3>Computação moderna — GPUs, IA e computação em nuvem</h3>
+                <p class="more">Nos últimos anos, aceleração por GPU, aprendizado de máquina e serviços em nuvem têm remodelado o que os computadores conseguem fazer.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" style="margin-top:18px">
+          <h3>Resumo rápido</h3>
+          <p class="lead">A história dos computadores é feita de ideias teóricas (como Turing), invenções mecânicas (Babbage), avanços eletrônicos (transistor) e, por fim, integração em silício e rede — sempre combinando hardware e software.</p>
+        </article>
+      </section>
+
+      <aside class="side">
+        <div class="card" id="criadores">
+          <h3>Criadores</h3>
+          <div class="creators">
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <div class="avatar">M</div>
+              <div style="font-size:13px;color:var(--muted)">Miguel — <span class="highlight">Desenvolvedor</span></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <div class="avatar">R</div>
+              <div style="font-size:13px;color:var(--muted)">Rauan — <span class="highlight">Designer</span></div>
+            </div>
+          </div>
+          <p style="margin-top:12px;color:var(--muted);font-size:14px">Este site foi criado por <strong>Miguel</strong> e <strong>Rauan</strong> como um projeto educativo para compartilhar uma visão clara e didática da história dos computadores.</p>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <button class="btn" id="showModal">Ver créditos</button>
+            <a class="btn primary" href="#contato">Contato</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4>Destaques</h4>
+          <ul style="margin:8px 0 0;padding-left:18px;color:var(--muted)">
+            <li>Visão concisa e cronológica</li>
+            <li>Design responsivo e simples</li>
+            <li>Interatividade mínima com JS</li>
+          </ul>
+        </div>
+
+        <footer class="card" style="margin-top:14px">
+          <div id="contato">
+            <h4>Contato</h4>
+            <p style="color:var(--muted);margin:6px 0 0">Email: <span class="highlight">contato@pcmenteslab.test</span></p>
+          </div>
+        </footer>
+      </aside>
+    </main>
+
+    <footer style="text-align:center;margin-top:26px;color:var(--muted);font-size:13px">© PCMentesLab — Criado por Miguel & Rauan</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

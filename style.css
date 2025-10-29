@@ -1,0 +1,30 @@
+:root {
+  --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#7c3aed; --glass:rgba(255,255,255,0.04);
+  --maxw:1100px; font-family: Inter, system-ui, Arial;
+}
+* { box-sizing:border-box }
+html,body { height:100%; margin:0; background:linear-gradient(180deg,#071024 0%,var(--bg) 100%); color:#e6eef8 }
+.wrap { max-width:var(--maxw); margin:36px auto; padding:28px }
+header { display:flex; align-items:center; justify-content:space-between; gap:16px }
+.brand { display:flex; align-items:center; gap:14px }
+.logo { width:56px; height:56px; border-radius:10px; background:linear-gradient(135deg,var(--accent),#06b6d4); display:flex; align-items:center; justify-content:center; font-weight:700; color:white }
+h1 { font-size:20px; margin:0 }
+p.lead { margin:6px 0 0; color:var(--muted) }
+nav a { color:var(--muted); text-decoration:none; margin-left:18px; font-size:14px }
+main { margin-top:28px; display:grid; grid-template-columns:1fr 340px; gap:26px }
+.card { background:var(--card); padding:20px; border-radius:14px; box-shadow:0 6px 24px rgba(2,6,23,0.6) }
+.hero { padding:28px; border-radius:12px; background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); display:flex; flex-direction:column; gap:12px }
+.timeline { margin-top:12px; display:flex; flex-direction:column; gap:10px }
+.event { display:flex; gap:12px; align-items:flex-start; cursor:pointer }
+.dot { width:12px; height:12px; border-radius:50%; background:var(--accent); margin-top:6px }
+.event h3 { margin:0; font-size:15px }
+.event p { margin:6px 0 0; color:var(--muted); font-size:14px; display:none }
+.event.open p { display:block }
+.side { position:sticky; top:30px; height:fit-content }
+.creators { display:flex; gap:12px; align-items:center }
+.avatar { width:54px; height:54px; border-radius:10px; background:#1e293b; display:flex; align-items:center; justify-content:center; font-weight:700 }
+.btn { padding:8px 12px; border-radius:10px; background:var(--glass); border:1px solid rgba(255,255,255,0.03); cursor:pointer; color:var(--muted); font-size:14px }
+.btn.primary { background:linear-gradient(90deg,var(--accent),#06b6d4); color:white; border:none }
+.search { width:100%; padding:8px; border-radius:10px; border:1px solid rgba(255,255,255,0.03); background:transparent; color:inherit }
+@media (max-width:900px){ main { grid-template-columns:1fr } .side { position:relative; top:auto } }
+.highlight { color:var(--accent); font-weight:600 }
