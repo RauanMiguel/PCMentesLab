@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <div class="logo">
+    <div class="logo">  
       <img src="https://cdn-icons-png.flaticon.com/512/1039/1039332.png" alt="Logo do PCMentesLab">
       <h1>PCMentesLab</h1>
     </div>
@@ -23,15 +23,50 @@
   </header>
 
   <main class="pagina-contato">
-    <h2>Entre em Contato</h2>
-    <p>Envie suas dúvidas, sugestões ou colaborações!</p>
+    <section class="introducao">
+      <h2>Entre em Contato</h2>
+      <p>Quer conversar conosco? O PCMentesLab está sempre aberto a dúvidas, sugestões e colaborações!</p>
+    </section>
 
-    <form id="formContato">
-      <input type="text" id="nome" placeholder="Seu nome" required>
-      <input type="email" id="email" placeholder="Seu e-mail" required>
-      <textarea id="mensagem" placeholder="Digite sua mensagem..." required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+    <section class="info-contato">
+      <div class="card-contato">
+        <h3>📍 Sobre Nós</h3>
+        <p><strong>Nome do Projeto:</strong> PCMentesLab</p>
+        <p>Um espaço dedicado a explorar e ensinar sobre o mundo dos computadores e do desenvolvimento web.</p>
+      </div>
+
+      <div class="card-contato">
+        <h3>📞 Meios de Contato</h3>
+        <p><strong>E-mail:</strong> <a href="mailto:pcm.lab@gmail.com">pcm.lab@gmail.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5599999999999" target="_blank">(99) 99999-9999</a></p>
+        <p><strong>Endereço:</strong> Av. Principal, 123 – Timon, MA</p>
+      </div>
+
+      <div class="card-contato">
+        <h3>🕒 Horário de Atendimento</h3>
+        <p>Segunda a Sexta: 08h às 18h</p>
+        <p>Sábado: 09h às 13h</p>
+      </div>
+
+      <div class="card-contato">
+        <h3>🌐 Redes Sociais</h3>
+        <div class="redes">
+          <a href="#" target="_blank">Instagram</a> |
+          <a href="#" target="_blank">Facebook</a> |
+          <a href="#" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario">
+      <h3>📬 Envie sua mensagem</h3>
+      <form id="formContato">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <textarea id="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
   </main>
 
   <footer>
